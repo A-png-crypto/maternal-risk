@@ -1,0 +1,732 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+    height: 75px;
+    background: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #176b87;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+}
+
+
+.nav-links a:hover {
+    color: #176b87;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px 10%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e9f8fb,
+            #f8fbff
+        );
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    background: #d8f2f7;
+
+    color: #176b87;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+.hero h1 {
+    font-size: 60px;
+
+    line-height: 1.1;
+
+    margin: 20px 0;
+}
+
+
+.hero h1 span {
+    color: #176b87;
+}
+
+
+.hero p {
+    font-size: 19px;
+
+    color: #596579;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+}
+
+
+.primary-button {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #176b87;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+.primary-button:hover {
+    background: #12576e;
+}
+
+
+/* ================================
+   HERO CARD
+================================ */
+
+.hero-card {
+    width: 320px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,0.08);
+
+    text-align: center;
+}
+
+
+.card-icon {
+    font-size: 70px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+.hero-card p {
+    color: #667085;
+}
+
+
+/* ================================
+   STATISTICS
+================================ */
+
+.statistics {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    padding: 50px 10%;
+
+    background: white;
+}
+
+
+.stat-card {
+    text-align: center;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    background: #f7f9fc;
+}
+
+
+.stat-card h2 {
+    font-size: 32px;
+
+    color: #176b87;
+}
+
+
+.stat-card p {
+    color: #667085;
+}
+
+
+/* ================================
+   SECTIONS
+================================ */
+
+.prediction-section {
+    padding: 90px 10%;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.section-heading span {
+    color: #176b87;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.section-heading h2 {
+    font-size: 38px;
+
+    margin: 10px 0;
+}
+
+
+.section-heading p {
+    color: #667085;
+}
+
+
+/* ================================
+   PREDICTION CONTAINER
+================================ */
+
+.prediction-container {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.form-card,
+.result-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(0,0,0,0.06);
+}
+
+
+.form-card h3 {
+    margin-bottom: 25px;
+
+    font-size: 24px;
+}
+
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.input-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.input-group label {
+    font-weight: 600;
+
+    font-size: 14px;
+}
+
+
+.input-group input {
+    padding: 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.input-group input:focus {
+    border-color: #176b87;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(23,107,135,0.1);
+}
+
+
+/* ================================
+   PREDICT BUTTON
+================================ */
+
+.predict-button {
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 16px;
+
+    background: #176b87;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.predict-button:hover {
+    background: #12576e;
+}
+
+
+/* ================================
+   RESULT
+================================ */
+
+.result-card {
+    min-height: 450px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.result-placeholder {
+    color: #667085;
+}
+
+
+.large-icon {
+    font-size: 70px;
+
+    margin-bottom: 20px;
+}
+
+
+.result-placeholder h3 {
+    color: #172033;
+
+    font-size: 25px;
+}
+
+
+/* ================================
+   RISK RESULT
+================================ */
+
+.risk-result {
+    width: 100%;
+}
+
+
+.risk-icon {
+    font-size: 70px;
+
+    margin-bottom: 15px;
+}
+
+
+.risk-result h2 {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+.low-risk {
+    color: #087443;
+}
+
+
+.medium-risk {
+    color: #a66b00;
+}
+
+
+.high-risk {
+    color: #b42318;
+}
+
+
+.probability {
+    margin-top: 30px;
+
+    text-align: left;
+}
+
+
+.probability-row {
+    margin: 15px 0;
+}
+
+
+.probability-label {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+
+.progress {
+    height: 10px;
+
+    background: #e5e7eb;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.progress-bar {
+    height: 100%;
+
+    background: #176b87;
+}
+
+
+/* ================================
+   PERFORMANCE
+================================ */
+
+.performance {
+    padding: 80px 10%;
+
+    background: #eef8fa;
+}
+
+
+.metrics {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+.metric {
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 12px;
+}
+
+
+.metric h2 {
+    font-size: 32px;
+
+    color: #176b87;
+}
+
+
+/* ================================
+   ABOUT
+================================ */
+
+.about {
+    padding: 90px 10%;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap: 60px;
+
+    background: white;
+}
+
+
+.about > div > span {
+    color: #176b87;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.about h2 {
+    font-size: 38px;
+
+    margin: 10px 0 20px;
+}
+
+
+.about p {
+    color: #667085;
+
+    margin-bottom: 15px;
+}
+
+
+.factors {
+    background: #f7f9fc;
+
+    padding: 30px;
+
+    border-radius: 15px;
+}
+
+
+.factors h3 {
+    margin-bottom: 15px;
+}
+
+
+.factors ul {
+    list-style: none;
+}
+
+
+.factors li {
+    padding: 9px 0;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* ================================
+   LOADING
+================================ */
+
+.loading {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #176b87;
+
+    font-weight: bold;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    text-align: center;
+
+    padding: 45px;
+
+    background: #172033;
+
+    color: white;
+}
+
+
+footer p {
+    color: #aab2c0;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 50px;
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    .statistics {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .prediction-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .metrics {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .hero {
+        padding: 60px 6%;
+    }
+
+
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .metrics {
+        grid-template-columns: 1fr;
+    }
+
+}
